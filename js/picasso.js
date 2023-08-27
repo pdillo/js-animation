@@ -71,7 +71,6 @@
 					'animations' :  [
 						{
 							'selector'    : '.bean-to-cup-05',
-							'translateX'  : '-320', 
 							'opacity'     : [0, 1]
 						}
 					]
@@ -99,7 +98,6 @@
 						} , {
 							'selector'    : '.bean-to-cup-05',
 							'translateY'  : '-100%',
-							'translateX'  : [-320, -320], 
 							'opacity'     : [1, 0]
 						}
 					]
@@ -127,7 +125,7 @@
 					'animations' :  [
 						{
 							'selector'    : '.graph',
-							'translateY'  : '-80%',
+							//'translateY'  : '-800',
 							'opacity'     : 0
 						}
 					]

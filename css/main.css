@@ -1,0 +1,166 @@
+.site-wrapper {
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 30px;
+	overflow: hidden;
+	position: relative;
+}
+
+body {
+	background: #fff;
+	font-weight: 300;
+}
+
+.wrapper {
+	display: none;
+}
+
+#scroll {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	font-size: 2em;
+	z-index: 99;
+	color: black;
+	margin-left: -80px;
+	margin-top: -80px;
+}
+
+/* 1. Intro Keyframe
+--------------------------------------- */
+#bean-to-cup {
+	position: fixed;
+	top: 0; 
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+
+.bean-to-cup-01,
+.bean-to-cup-02,
+.bean-to-cup-03,
+.bean-to-cup-04,
+.bean-to-cup-05 {
+	position: absolute;
+	height: calc(100% - 120px);
+	text-align: center;
+	width: 20%;
+	top: 60px;
+	opacity: 0;
+}
+.bean-to-cup-02 img,
+.bean-to-cup-03 img,
+.bean-to-cup-04 img,
+.bean-to-cup-05 img {
+	margin: 0 auto;
+}
+.bean-to-cup-01 {
+	left: -200px;
+}
+
+.bean-to-cup-01 img {
+	height: 100%;
+}
+
+.bean-to-cup-02 {
+	left: calc(20% + 120px);
+	width: 10%;
+}	
+
+.bean-to-cup-02 img {
+	top: calc(50% - 45px);
+	position: absolute;
+	left: calc(50% - 58px);
+}
+
+.bean-to-cup-03 {
+	left: calc(30% + 120px);
+	top: -260px;
+}
+
+.bean-to-cup-03 img {
+	padding: 60px;
+	width: calc(100% - 120px);
+	margin-top: calc(50% - 40px);
+}
+
+.bean-to-cup-04 {
+	left: calc(50% + 160px);
+	width: 10%;
+}	
+
+.bean-to-cup-04 img {
+	top: calc(50% - 45px);
+	position: absolute;
+	left: calc(50% - 48px);
+}
+
+.bean-to-cup-05 {
+	right: -200px;
+}
+
+.bean-to-cup-05 img {
+	height: 100%;
+}
+
+/* 2. Graph Animation
+--------------------------------------- */
+#graph {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+		text-align: center;
+	}
+
+	.graph,
+	.mask {
+		position: fixed;
+		height: 90%;
+		left: 12.5%;
+		top: 5%;
+	}
+
+	.graph { 
+		opacity: 0;
+		z-index: 2;
+	}
+
+	.mask {
+		/*mask-image: url('../img/mask.png');
+		mask-repeat: no-repeat;
+		background: url('../img/graph.png');
+		opacity: 0;
+		*/
+		z-index: 3;
+	}
+
+	/* 3. Handling resize and small devices
+	--------------------------------------- */
+	.error {
+		display: none;
+		position: fixed;
+		width: 80%;
+		font-size: 30px;
+		font-weight: 300;
+		text-align: center;
+		top: 30%;
+		left: 10%;
+	}
+	.page-error .error {
+		display: block;
+	}
+	.page-error .container {
+		display: none;
+	}
+	@media all and (max-width: 1000px) {
+		.container {
+			display: none;
+		}
+		.error {
+			display: block;
+			font-size: 22px;
+		}
+	}
